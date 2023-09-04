@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(247, 242, 236);
+}
+
+.wrapper{
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.bill-container{
+    width: 70%;
+    height: 350px;
+    background-color: rgba(49, 49, 194, 0.753);
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+h3{
+    margin-top: 16px;
+}
+input[type="text"]{
+    background-color: rgb(10, 10, 36);
+    width: 60%;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+
+.count-section{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 90px;
+}
+
+.count-section div{
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.control-inputs{
+    display: flex;
+    align-items: start;
+}
+input , p{
+    margin: 10px;
+}
+
+.control-inputs input{
+    font-size: 18px;
+    color: slateblue;
+    width: 25px;
+}
+@media (max-width:800px) {
+    .bill-container{
+        width: 300px;
+    }
+    input[type='text']{
+        width: 95%;
+    }
+}
